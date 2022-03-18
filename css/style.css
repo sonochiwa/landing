@@ -3,8 +3,13 @@
 @import "bootstrap-grid.css";
 
 @import "header.css";
+@import "contact-us.css";
+@import "generate-qr.css";
+@import "ordering.css";
+@import "notab-phone.css";
 @import "get-in-touch.css";
 @import "footer.css";
+@import "cookies.css";
 
 * {
   margin: 0;
@@ -50,4 +55,5 @@ body {
   font-size: 51px;
   font-weight: 700;
   line-height: 62px;
+  margin-bottom: 23px;
 }

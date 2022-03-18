@@ -1,0 +1,60 @@
+.ordering {
+}
+.ordering__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ordering__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 868px;
+  height: 1039px;
+  background-image: url(../img/phone-8.png);
+}
+
+.ordering__text {
+  padding-left: 570px;
+}
+
+.messages {
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 590px;
+  width: 900px;
+  /* justify-content: space-between; */
+}
+
+#message-1 {
+  margin-right: -300px;
+  width: 267px;
+  height: 99px;
+  background-image: url(../img/message-1.svg);
+}
+
+#message-2 {
+  margin-left: -700px;
+  width: 285px;
+  height: 113px;
+  background-image: url(../img/message-2.svg);
+  margin-top: 56px;
+}
+
+#message-3 {
+  margin-right: -700px;
+  width: 185px;
+  height: 91px;
+  background-image: url(../img/message-3.svg);
+  margin-top: 160px;
+}
+
+#message-4 {
+  margin-left: -350px;
+  width: 176px;
+  height: 65px;
+  background-image: url(../img/message-4.svg);
+}

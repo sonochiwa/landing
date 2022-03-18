@@ -1,0 +1,15 @@
+.notab-phone__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1006px;
+  width: 100%;
+  background-position: center;
+  background-image: url(../img/bg-5.png);
+}
+
+.notab-phone__img {
+  width: 859px;
+  height: 428px;
+  background-image: url(../img/phone-9.png);
+}

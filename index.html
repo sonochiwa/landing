@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+    <title>NoTab</title>
+    <link type="Image/x-icon" href="img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+
+    <!-- header starts -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -26,9 +30,95 @@
             </div>
         </div>
     </header>
+    <!-- header ends -->
+
 
     <div class="wrapper">
         <main class="main">
+
+
+
+
+
+            <!-- contact-us STARTS -->
+            <div class="contact-us">
+                <div class="container">
+                    <div class="contact-us__inner">
+                        <div class="contact-us__card">
+                            <p class="contact-us__text">Would like to become <br>
+                                a member, please contact us</p>
+                            <a class="contact-us__link" href="mailto:support@notab.com">
+                                support@notab.com</a>
+
+                        </div>
+                        <div class="contact-us__card">
+                            <p class="contact-us__text">Already a partner?</p>
+                            <a class="contact-us__link" href="#login">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact-us ENDS -->
+
+
+            <!-- generate-qr STARTS -->
+            <section class="generate-qr">
+                <div class="container">
+                    <div class="generate-qr__inner">
+                        <div class="generate-qr__linear"></div>
+                        <div class="generate-qr__img">
+                            <div class="generate-qr__scan"></div>
+
+                        </div>
+                        <div class="generate-qr__text">
+                            <h2 class="h2-heading">
+                                Generate your<br>QR-code
+                            </h2>
+                            <p class="primary-text">
+                                The guest QR code is scanned<br>
+                                by the staff and automatically sent
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- generate-qr ENDS -->
+
+
+            <!-- ordering STARTS -->
+            <section class="ordering">
+                <div class="container">
+                    <div class="ordering__inner">
+                        <div class="ordering__text">
+                            <h2 class="h2-heading">Easier ordering.<br>
+                                Happier guests.</h2>
+                            <p class="primary-text">NoTab makes it simple for patrons to easily</p>
+                        </div>
+                        <div class="ordering__img">
+                            <div class="messages">
+                                <div id="message-1"></div>
+                                <div id="message-2"></div>
+                                <div id="message-3"></div>
+                                <div id="message-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ordering ENDS -->
+
+            <!-- notab-phone STARTS -->
+            <div class="notab-phone">
+                <div class="container">
+                    <div class="notab-phone__inner">
+                        <div class="notab-phone__img"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- notab-phone ENDS -->
+
+
+            <!-- get-in-touch STARTS -->
             <section class="get-in-touch">
                 <div class="container">
                     <div class="get-in-touch__inner">
@@ -38,7 +128,10 @@
                         <p class="primary-text get-in-touch__primary-text">Have questions about Noble or just want to
                             say hello? <br>
                             Drop us a line and a member of our team will getback to you shortly.</p>
-                        <form class="get-in-touch__form" action="#get-in-touch-form">
+
+                        <!-- <form class="get-in-touch__form" action="#get-in-touch-form"> -->
+                        <!-- закоментил форму, чтобы при первом клике по бтн страницу не дергало -->
+                        <div class="get-in-touch__form">
                             <input class="get-in-touch__input" type="text" placeholder="Name">
                             <input class="get-in-touch__input" type="text" placeholder="Venue Name">
                             <div class="get-in-touch__inputs">
@@ -47,9 +140,10 @@
                             </div>
                             <input class="get-in-touch__input" type="text" placeholder="Email">
                             <input class="get-in-touch__input" type="text" placeholder="Subject">
-                            <textarea class="get-in-touch__area" name="" id="" placeholder="Message"></textarea>
+                            <textarea class="get-in-touch__area" name="area" placeholder="Message"></textarea>
                             <button class="get-in-touch__btn">Send</button>
-                        </form>
+                        </div>
+                        <!-- </form> -->
                         <p class="get-in-touch__dl-text">
                             DOWNLOAD OUR APP
                         </p>
@@ -63,7 +157,13 @@
                     </div>
                 </div>
             </section>
+            <!-- get-in-touch ENDS -->
+
+
         </main>
+
+
+        <!-- footer STARTS -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
@@ -93,12 +193,26 @@
                 </div>
             </div>
         </footer>
+        <!-- footer ENDS -->
+
+
     </div>
+
+
+    <!-- cookies notification STARTS -->
+    <div class="cookies-wrapper">
+        <div class="cookies">
+            <p class="cookies__text">We use cookie to improve your experience on our site. By using our site you
+                consent cookies.</p>
+            <button class="cookies__btn">OK</button>
+        </div>
+    </div>
+    <!-- cookies notification ENDS -->
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
