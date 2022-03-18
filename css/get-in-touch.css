@@ -1,0 +1,103 @@
+.get-in-touch__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.get-in-touch__primary-text {
+  width: 580px;
+  margin-top: 23px;
+}
+
+.get-in-touch__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 818px;
+  margin-top: 82px;
+  width: 100%;
+}
+
+.get-in-touch__input {
+  display: flex;
+  padding: 0 23px;
+  height: 83px;
+  border-radius: 10px;
+  margin-top: 23px;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+}
+
+.get-in-touch__area {
+  width: 100%;
+  padding: 0 23px;
+  padding-top: 29px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 23px;
+  font-size: 18px;
+  resize: none;
+  border: none;
+}
+
+.get-in-touch__inputs {
+  display: flex;
+  width: 100%;
+}
+
+.get-in-touch__inputs .get-in-touch__input + .get-in-touch__input {
+  margin-left: 23px;
+}
+
+.get-in-touch__btn {
+  width: 398px;
+  height: 80px;
+  color: white;
+  font-size: 24px;
+  background: #000000;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.get-in-touch__btn:hover {
+  cursor: pointer;
+  background: #202020;
+}
+
+.get-in-touch__dl-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  margin-top: 91px;
+}
+
+.get-in-touch__apps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 610px;
+  margin-top: 33px;
+}
+
+.get-in-touch__appstore {
+  width: 258.93px;
+  height: 81.27px;
+  background-repeat: no-repeat;
+  background-image: url(../img/appstore.svg);
+}
+.get-in-touch__googleplay {
+  width: 292.13px;
+  height: 81.27px;
+  background-repeat: no-repeat;
+  background-image: url(../img/googleplay.svg);
+}
+
+.get-in-touch__app-link {
+  display: flex;
+}

@@ -1,0 +1,41 @@
+.footer__inner {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__notab {
+  width: 81.01px;
+  height: 16.15px;
+  background-image: url(../img/notab.svg);
+}
+.footer__email {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer__copyright {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.footer__list {
+  list-style-type: none;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.footer__link:hover {
+  text-decoration-line: underline;
+}
+
+.footer__item + .footer__item {
+  margin-top: 20px;
+}

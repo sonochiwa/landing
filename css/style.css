@@ -1,0 +1,53 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "bootstrap-grid.css";
+
+@import "header.css";
+@import "get-in-touch.css";
+@import "footer.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "NotoSans";
+  background-color: black;
+  color: white;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.primary-text {
+  font-family: "NotoSans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.h2-heading {
+  font-family: "Montserrat";
+  font-size: 51px;
+  font-weight: 700;
+  line-height: 62px;
+}

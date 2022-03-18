@@ -1,0 +1,58 @@
+.header {
+}
+
+.header__inner {
+}
+
+.header__top {
+  display: flex;
+  height: 150px;
+  align-items: center;
+}
+
+.header__middle {
+}
+
+.header__bottom {
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__cube {
+  width: 107px;
+  height: 109px;
+  background-image: url(../img/logo-cube.png);
+}
+
+.logo__text {
+  width: 96px;
+  height: 24.75px;
+  background-image: url(../img/logo-text.svg);
+  margin-right: 108px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.auth__ico {
+  width: 26px;
+  height: 24.99px;
+  background-image: url(../img/auth-ico.svg);
+  margin-right: 12px;
+}
+
+.auth__text {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.auth__text:hover {
+  text-decoration-line: underline;
+}
