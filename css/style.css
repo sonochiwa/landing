@@ -15,6 +15,21 @@
 @import "footer.css";
 @import "cookies.css";
 
+/* placeholder color */
+
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-moz-placeholder {
+  color: #bfbfbf;
+}
+:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +48,8 @@ body {
   color: white;
   font-style: normal;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-width: 375px;
 }
 
 .wrapper {
@@ -70,4 +87,172 @@ body {
   font-weight: 700;
   line-height: 62px;
   margin-bottom: 23px;
+}
+
+@media (max-width: 1600px) {
+  /* body {
+    background-color: #006800;
+  } */
+  /* .messages {
+    transform: scale(0.9);
+    top: 140px;
+  } */
+}
+
+@media (max-width: 1200px) {
+  /* body {
+    background-color: #005500;
+  } */
+  /* .messages {
+    transform: scale(0.8);
+    top: 110px;
+  } */
+}
+
+@media (max-width: 992px) {
+  /* body {
+    background-color: #003d00;
+  } */
+  .messages {
+    transform: scale(0.8);
+    top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* body {
+    background-color: #002000;
+  } */
+
+  .messages {
+    transform: scale(0.7);
+    top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: rgb(105, 0, 0);
+  }
+  .footer__inner {
+    text-align: center;
+    flex-direction: column-reverse;
+    padding: 30px;
+  }
+  .footer__email {
+    width: 100%;
+  }
+  .footer__item {
+    justify-content: center;
+  }
+  .footer__copyright {
+    font-size: 14px;
+  }
+  .footer__email {
+    font-size: 14px;
+  }
+  .footer__email .footer__link {
+    font-size: 14px;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .get-in-touch__inner {
+    margin: 50px 0;
+  }
+  .get-in-touch__apps {
+    margin-top: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .get-in-touch__appstore {
+    width: 100%;
+    height: 60px;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 45px;
+  }
+  .get-in-touch__googleplay {
+    width: 100%;
+    height: 60px;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 23px;
+  }
+  .get-in-touch__btn {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .get-in-touch__primary-text {
+    max-width: 351px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 24px;
+  }
+  .get-in-touch__form {
+    margin-top: 27px;
+  }
+  .get-in-touch__h2-heading {
+    font-size: 24px;
+    margin: 0;
+    line-height: 29px;
+  }
+  .get-in-touch__input {
+    margin-top: 16px;
+    height: 57px;
+    font-size: 16px;
+  }
+  .get-in-touch__dl-text {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 74px;
+  }
+  .notab-phone {
+    display: none;
+  }
+  .ordering__text {
+    top: -180px;
+    left: 0;
+  }
+  .ordering__inner {
+    margin-top: 220px;
+    margin-bottom: 50px;
+  }
+  .ordering__h2-heading {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .ordering__primary-text {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .message-1 {
+    margin-left: -90%;
+    margin-top: -3%;
+  }
+
+  .message-2 {
+    margin-right: -80%;
+    margin-bottom: 80%;
+  }
+
+  .message-3 {
+    margin-bottom: -94%;
+    margin-left: 75%;
+  }
+
+  .message-4 {
+    /* margin-bottom: 94%; */
+    /* margin-top: 90%; */
+    margin-left: -50%;
+  }
+
+  .messages {
+    transform: scale(0.6);
+    top: -120px;
+  }
 }

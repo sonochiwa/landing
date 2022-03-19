@@ -32,17 +32,17 @@ sendBtn.onclick = function () {
 
 
 // our-mission starts
-// let hiddenText = document.querySelector('.our-mission__text-inner');
-// let deleteText = document.querySelector('.our-mission__text');
-// let enabledPhone = document.querySelector('.our-mission__phone');
+let missionText = document.querySelector('.our-mission__text');
+let enabledPhone = document.querySelector('.our-mission__phone');
 
-// function deleteTextFunc() {
-//     deleteText.remove(deleteText);
-// }
+function deleteTextFunc() {
+    missionText.remove(missionText);
+}
 
-// $(window).scroll(function () {
-//     if ($(this).scrollTop() > $(hiddenText).offset().top - 500) {
-//         hiddenText.classList.add('text-hidden');
-//         setTimeout(deleteTextFunc, 3000);
-//     }
-// });
+$(window).scroll(function () {
+    if ($(this).scrollTop() > $(missionText).offset().top - 500) {
+        missionText.classList.add('text-hidden');
+        enabledPhone.classList.add('phone-enabled');
+        setTimeout(deleteTextFunc, 3000);
+    }
+});

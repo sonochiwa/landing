@@ -1,0 +1,65 @@
+.our-mission__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  overflow-x: hidden;
+  height: 1045px;
+}
+
+.our-mission__text {
+  margin-top: 150px;
+  width: 460px;
+}
+
+.our-mission__primary-text {
+  width: 315px;
+}
+
+.our-mission__phone {
+  margin-top: -100px;
+  margin-left: 50px;
+  height: 999px;
+  width: 498px;
+  background-size: 100% 100%;
+  transform: rotate(90deg);
+  background-image: url(../img/phone-2.png);
+}
+
+.text-hidden {
+  animation-name: textAnimate;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textAnimate {
+  from {
+    margin-right: 0;
+    opacity: 1;
+  }
+  to {
+    margin-right: -300px;
+    opacity: 0;
+  }
+}
+
+.phone-enabled {
+  animation-name: phoneAnimate;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes phoneAnimate {
+  from {
+    left: 0;
+  }
+  to {
+    margin-top: 100px;
+    height: 745px;
+    width: 371px;
+    background-size: 100% 100%;
+    transform: rotate(0);
+    margin-left: 500px;
+  }
+}

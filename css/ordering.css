@@ -1,59 +1,61 @@
 .ordering__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
+  margin: 200px 0 100px;
 }
 .ordering__img {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 868px;
-  height: 1039px;
-  background-image: url(../img/phone-8.png);
+  /* max-width: 868px; */
+}
+
+.ordering__img img {
+  width: 100%;
+  height: 100%;
 }
 
 .ordering__text {
-  padding-left: 570px;
+  position: absolute;
+  top: -180px;
+  right: 0;
 }
 
 .messages {
-  margin-top: -100px;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 590px;
-  width: 900px;
-  /* justify-content: space-between; */
+  top: 200px;
+  width: 100%;
 }
 
-#message-1 {
-  margin-right: -300px;
-  width: 267px;
-  height: 99px;
-  background-image: url(../img/message-1.svg);
+.message-1 {
+  width: 276px;
+  height: 100px;
+  margin-left: 25%;
 }
 
-#message-2 {
-  margin-left: -700px;
+.message-2 {
   width: 285px;
   height: 113px;
-  background-image: url(../img/message-2.svg);
-  margin-top: 56px;
+  margin-top: 2%;
+  margin-right: 70%;
 }
 
-#message-3 {
-  margin-right: -700px;
-  width: 185px;
+.message-3 {
+  width: 182px;
   height: 91px;
-  background-image: url(../img/message-3.svg);
-  margin-top: 160px;
+  margin-left: 75%;
 }
 
-#message-4 {
-  margin-left: -350px;
-  width: 176px;
+.message-4 {
+  width: 175px;
   height: 65px;
-  background-image: url(../img/message-4.svg);
+  margin-top: 20%;
+  margin-right: 50%;
 }

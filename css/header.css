@@ -1,10 +1,13 @@
+.header {
+  background-color: rgb(52, 48, 77);
+}
+
 .header__inner {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  max-height: 1200px;
+  min-height: 100vh;
+  /* max-height: 1200px; */
   padding: 0 100px;
-  background-color: rgb(52, 48, 77);
 }
 
 .header__top {
@@ -21,7 +24,7 @@
 
 .header__bottom {
   display: flex;
-  height: 100px;
+  min-height: 100px;
   justify-content: space-between;
   align-items: center;
 }
@@ -97,6 +100,7 @@
   justify-content: space-between;
   height: 51px;
   width: 380px;
+  margin-right: 50px;
 }
 .header__appstore {
   height: 100%;

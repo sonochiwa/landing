@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 100px 0;
 }
 
 .get-in-touch__primary-text {
-  width: 580px;
+  max-width: 580px;
   margin-top: 23px;
 }
 
@@ -43,15 +44,6 @@
   border: none;
 }
 
-.get-in-touch__inputs {
-  display: flex;
-  width: 100%;
-}
-
-.get-in-touch__inputs .get-in-touch__input + .get-in-touch__input {
-  margin-left: 23px;
-}
-
 .get-in-touch__btn {
   width: 398px;
   height: 80px;
@@ -86,14 +78,16 @@
 }
 
 .get-in-touch__appstore {
-  width: 258.93px;
-  height: 81.27px;
+  width: 100%;
+  height: 80px;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/appstore.svg);
 }
 .get-in-touch__googleplay {
-  width: 292.13px;
-  height: 81.27px;
+  width: 100%;
+  height: 80px;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/googleplay.svg);
 }

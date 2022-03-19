@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-size: 100% 100%;
+  background-size: 100% auto;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/bg-1.png);
   margin: 100px 0;
