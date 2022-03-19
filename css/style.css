@@ -32,6 +32,7 @@ body {
   background-color: black;
   color: white;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 .wrapper {

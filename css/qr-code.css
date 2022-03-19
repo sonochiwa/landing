@@ -1,0 +1,57 @@
+.qr-code__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  background: url(../img/bg-2.png) 0 50% no-repeat,
+    url(../img/bg-3.png) 100% 60% no-repeat;
+  margin-bottom: 800px;
+}
+.qr-code__text {
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 500px;
+}
+
+.qr-code__primary-text {
+  width: 315px;
+}
+.qr-code__apps {
+  display: flex;
+  justify-content: space-between;
+  height: 51px;
+  width: 376px;
+  margin-top: 50px;
+}
+.qr-code__appstore {
+  height: 100%;
+  width: 163px;
+  background-size: 100% 100%;
+  background-image: url(../img/appstore.svg);
+}
+.qr-code__googleplay {
+  height: 100%;
+  width: 184px;
+  background-size: 100% 100%;
+  background-image: url(../img/googleplay.svg);
+}
+.qr-code__phones {
+  display: flex;
+  width: 740px;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+#qr-code__img-1 {
+  width: 333px;
+  height: 667px;
+  background-image: url(../img/phone-5.png);
+  margin-top: 450px;
+}
+#qr-code__img-2 {
+  width: 333px;
+  height: 667px;
+  margin-top: 900px;
+  background-image: url(../img/phone-6.png);
+}
