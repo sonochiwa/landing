@@ -1,0 +1,12 @@
+.integration__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin: 200px 0;
+}
+.integration__text {
+    margin-top: 80px;
+}
+.integration__primary-text {
+  width: 395px;
+}

@@ -1,7 +1,10 @@
-.header {
-}
-
 .header__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 1200px;
+  padding: 0 100px;
+  background-color: rgb(88, 88, 88);
 }
 
 .header__top {
@@ -11,14 +14,22 @@
 }
 
 .header__middle {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .header__bottom {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin-left: -14px;
 }
 
 .logo__cube {
@@ -55,4 +66,47 @@
 
 .auth__text:hover {
   text-decoration-line: underline;
+}
+
+.header__primary-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin-left: 105px;
+}
+
+.header__phone-wrapper {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+.header__phone {
+  width: 333px;
+  height: 668px;
+  background-image: url(../img/phone-1.png);
+}
+
+.header__dl-text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+}
+.header__apps {
+  display: flex;
+  justify-content: space-between;
+  height: 51px;
+  width: 380px;
+}
+.header__appstore {
+  height: 100%;
+  width: 163px;
+  background-size: 100% 100%;
+  background-image: url(../img/appstore.svg);
+}
+.header__googleplay {
+  height: 100%;
+  width: 184px;
+  background-size: 100% 100%;
+  background-image: url(../img/googleplay.svg);
 }

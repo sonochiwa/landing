@@ -1,0 +1,36 @@
+.id-scanner {
+}
+.id-scanner__inner {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg-1.png);
+  margin: 100px 0;
+}
+.id-scanner__phones {
+  display: flex;
+}
+#id-scanner__img-1 {
+  margin-top: 100%;
+  width: 333px;
+  height: 667px;
+  background-image: url(../img/phone-3.png);
+}
+#id-scanner__img-2 {
+  margin-top: 100%;
+  width: 333px;
+  height: 667px;
+  background-image: url(../img/phone-4.png);
+  margin-left: 50px;
+}
+.id-scanner__text {
+  max-width: 500px;
+  margin-top: 80%;
+  /* margin-bottom: 300px; */
+}
+.id-scanner__primary-text {
+  width: 315px;
+}

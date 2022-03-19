@@ -47,3 +47,9 @@ sendBtn.onclick = function () {
 //     }
 // });
 
+$(document).mousewheel(function (e, delta) {
+    var otstup = $(document).scrollTop() - (delta * 100);
+    $('html').stop().animate({ scrollTop: otstup }, 15); // Скролим в FF и IE
+    $(document.body).stop().animate({ scrollTop: otstup }, 15); // Скролим в webkit
+    return false;
+});

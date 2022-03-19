@@ -4,6 +4,10 @@
 
 @import "header.css";
 @import "contact-us.css";
+@import "our-mission.css";
+@import "id-scanner.css";
+@import "integration.css";
+@import "qr-code.css";
 @import "generate-qr.css";
 @import "ordering.css";
 @import "notab-phone.css";
@@ -23,6 +27,7 @@ html {
 }
 
 body {
+  cursor: default;
   font-family: "NotoSans";
   background-color: black;
   color: white;
@@ -48,6 +53,14 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
+}
+
+.h1-heading {
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70px;
+  margin: 130px 0;
 }
 
 .h2-heading {
