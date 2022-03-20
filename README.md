@@ -1,1 +1,1 @@
-# pages - https://sonochiwa.github.io/landing/
+pages - https://sonochiwa.github.io/landing/
