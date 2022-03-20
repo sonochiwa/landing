@@ -16,13 +16,16 @@
 }
 
 .our-mission__phone {
-  margin-top: -100px;
+  margin-top: -150px;
   margin-left: 50px;
-  height: 999px;
   width: 498px;
-  background-size: 100% 100%;
+  height: 100%;
   transform: rotate(90deg);
-  background-image: url(../img/phone-2.png);
+}
+
+.our-mission__phone img {
+  height: 100%;
+  width: auto;
 }
 
 .text-hidden {
@@ -60,6 +63,6 @@
     width: 371px;
     background-size: 100% 100%;
     transform: rotate(0);
-    margin-left: 500px;
+    margin-left: 35%;
   }
 }

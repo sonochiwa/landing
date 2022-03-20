@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0 100px;
+  width: 100%;
+  padding-top: 200px;
+  margin: 200px 0;
 }
 .ordering__img {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,42 +21,11 @@
 }
 
 .ordering__text {
+  margin-top: -180px;
   position: absolute;
-  top: -180px;
   right: 0;
 }
 
-.messages {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 200px;
-  width: 100%;
-}
-
-.message-1 {
-  width: 276px;
-  height: 100px;
-  margin-left: 25%;
-}
-
-.message-2 {
-  width: 285px;
-  height: 113px;
-  margin-top: 2%;
-  margin-right: 70%;
-}
-
-.message-3 {
-  width: 182px;
-  height: 91px;
-  margin-left: 75%;
-}
-
-.message-4 {
-  width: 175px;
-  height: 65px;
-  margin-top: 20%;
-  margin-right: 50%;
+img[alt="phone-8-mobil"] {
+  display: none;
 }

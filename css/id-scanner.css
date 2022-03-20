@@ -1,5 +1,3 @@
-.id-scanner {
-}
 .id-scanner__inner {
   padding: 0 100px;
   display: flex;
@@ -12,20 +10,30 @@
   margin: 100px 0;
 }
 .id-scanner__phones {
+
   display: flex;
+
 }
-#id-scanner__img-1 {
+.id-scanner__img-1 {
   margin-top: 100%;
   width: 333px;
-  height: 667px;
-  background-image: url(../img/phone-3.png);
+  height: auto;
 }
-#id-scanner__img-2 {
+
+.id-scanner__img-1 img {
+  width: 100%;
+  height: 100%;
+}
+.id-scanner__img-2 {
   margin-top: 100%;
   width: 333px;
-  height: 667px;
-  background-image: url(../img/phone-4.png);
+  height: auto;
   margin-left: 50px;
+}
+
+.id-scanner__img-2 img {
+  width: 100%;
+  height: 100%;
 }
 .id-scanner__text {
   max-width: 500px;
