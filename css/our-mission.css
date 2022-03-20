@@ -29,7 +29,7 @@
 .our-mission__phone {
 width: 299.08px;
   height: 600px;
-  margin-right: 300px;
+  /* margin-right: 300px; */
   transform: rotate(90deg);
 }
 

@@ -43,7 +43,7 @@ if (screen.width > 1199) {
         if ($(this).scrollTop() > $(missionText).offset().top - 500) {
             missionText.classList.add('text-hidden');
             enabledPhone.classList.add('phone-enabled');
-            // setTimeout(deleteTextFunc, 3000);
+            setTimeout(deleteTextFunc, 3000);
         }
     });
 }

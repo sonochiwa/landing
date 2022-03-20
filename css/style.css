@@ -627,4 +627,14 @@ body {
   .get-in-touch__input_last {
     margin-left: 0;
   }
+  .cookies {
+    padding-left: 20px;
+  }
+  .cookies__text {
+    width: 190px;
+    font-size: 12px;
+  }
+  .our-mission__phone {
+   margin-right: 0;
+    }
 }
