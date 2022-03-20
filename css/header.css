@@ -1,8 +1,37 @@
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
 .header__inner {
   display: flex;
   flex-direction: column;
   padding: 0 100px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.blur-1 {
+  position: absolute;
+  height: 1200px;
+  width: 1400px;
+  right: -300px;
+  top: -300px;
+  background-size: 100% 100%;
+  background-image: url(../img/blur-1.svg);
+  z-index: -1;
+}
+
+.blur-2 {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  left: -100px;
+  top: 280px;
+  background-size: 100% 100%;
+  background-image: url(../img/blur-2.svg);
+  z-index: -1;
 }
 
 .header__top {
@@ -12,6 +41,7 @@
 }
 
 .header__middle {
+  position: relative;
   display: flex;
   justify-content: space-between;
   height: 100%;

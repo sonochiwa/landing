@@ -241,6 +241,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  .blur-2 {
+    display: none;
+  }
   .header__apps {
     flex-direction: row;
   }
@@ -613,5 +616,9 @@ body {
   }
   .id-scanner__text {
     margin: 0;
+  }
+  .blur-8 {
+    width: 400px;
+    height: 300px;
   }
 }

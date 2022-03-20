@@ -1,4 +1,16 @@
+/* .blur-7 {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 100px;
+  right: -100px;
+  background-size: 100% 100%;
+  background-image: url(../img/blur-7.svg);
+  z-index: -1;
+} */
+
 .get-in-touch__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

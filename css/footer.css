@@ -1,4 +1,20 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.blur-8 {
+  position: absolute;
+  height: 300px;
+  bottom: 0;
+  width: 500px;
+  background-size: 100% 100%;
+  background-image: url(../img/blur-8.svg);
+  z-index: -1;
+}
+
 .footer__inner {
+  position: relative;
   display: flex;
   height: 300px;
   align-items: center;
@@ -22,6 +38,7 @@
 }
 
 .footer__list {
+  position: relative;
   list-style-type: none;
 }
 

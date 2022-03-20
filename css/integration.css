@@ -1,11 +1,23 @@
+.blur-4 {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  top: -300px;
+  background-size: 100% 100%;
+  background-image: url(../img/blur-4.svg);
+  z-index: -1;
+}
+
 .integration__inner {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   padding: 0 100px;
   margin: 200px 0;
 }
 .integration__text {
-    margin-top: 80px;
+  position: relative;
+  margin-top: 80px;
 }
 .integration__primary-text {
   width: 395px;

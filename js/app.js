@@ -15,7 +15,7 @@ cookiesOkBtn.onclick = function () {
     setTimeout(deleteBlock, 600);
 };
 
-setTimeout(showBlock, 1000);
+// setTimeout(showBlock, 1000);
 
 
 // form error
