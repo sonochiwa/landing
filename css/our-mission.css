@@ -1,7 +1,7 @@
 .blur-3 {
   position: absolute;
   height: 160px;
-  width:  160px;
+  width: 160px;
   right: 100px;
   background-size: 100% 100%;
   background-image: url(../img/blur-3.svg);
@@ -9,7 +9,6 @@
 }
 
 .our-mission__inner {
-  /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
   margin: 100px 0;
@@ -37,7 +36,7 @@
 
 .our-mission__phone img {
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 .text-hidden {
