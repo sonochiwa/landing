@@ -621,4 +621,10 @@ body {
     width: 400px;
     height: 300px;
   }
+  .get-in-touch__inputs {
+    flex-direction: column;
+  }
+  .get-in-touch__input_last {
+    margin-left: 0;
+  }
 }
