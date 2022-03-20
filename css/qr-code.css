@@ -3,16 +3,10 @@
   display: flex;
   justify-content: space-between;
   height: 100%;
-  /* background: url(../img/bg-2.png) 0 50% no-repeat,
-    url(../img/bg-3.png) 100% 60% no-repeat; */
-  /* margin-bottom: 800px; */
-  /* margin-top: 300px; */
 }
 .qr-code__bg-2 {
   position: absolute;
   left: 0;
-  /* width: 100%; */
-  /* top: -100px; */
 }
 
 .qr-code__bg-2 img {
@@ -22,7 +16,6 @@
 .qr-code__bg-3 {
   position: absolute;
   right: 0;
-  /* width: 100%; */
 }
 
 .qr-code__bg-3 img {
@@ -82,7 +75,6 @@
   position: relative;
   width: 333px;
   height: 667px;
-  /* background-image: url(../img/phone-5.png); */
   margin-top: 450px;
 }
 
@@ -95,7 +87,6 @@
   width: 333px;
   height: 667px;
   margin-top: 900px;
-  /* background-image: url(../img/phone-6.png); */
 }
 .qr-code__img-2 img {
   width: 100%;

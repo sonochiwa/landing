@@ -252,8 +252,6 @@ body {
     width: 100%;
   }
   .header__phone {
-    /* margin-left: 100px; */
-    /* width: 250px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,8 +339,6 @@ body {
   .header__phone img {
     height: 100%;
     width: auto;
-    /* right: -50px; */
-    /* margin-right: -70px; */
   }
 }
 
@@ -367,7 +363,6 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
   }
   .header__dl-text {
     font-size: 24px;
@@ -390,7 +385,6 @@ body {
     width: 100%;
   }
   .container {
-    /* min-width: 768px; */
     max-width: 768px;
   }
   .header__inner,
@@ -409,22 +403,16 @@ body {
   }
   .header__phone-wrapper {
     position: relative;
-    /* overflow-y: hidden; */
-    /* width: 100%; */
   }
   .header__phone {
     position: absolute;
     height: 523px;
 
     width: 100%;
-    /* right: -50px; */
-    /* margin-right: -70px; */
   }
   .header__phone img {
     height: 100%;
     width: auto;
-    /* right: -50px; */
-    /* margin-right: -70px; */
   }
 }
 
@@ -474,10 +462,8 @@ body {
     height: 323px;
     width: auto;
     right: -50px;
-    /* margin-right: -70px; */
   }
   .our-mission__phone img {
-    /* width: 250px; */
     width: 170px;
     height: 346px;
   }
