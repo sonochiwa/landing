@@ -27,9 +27,9 @@
 }
 
 .our-mission__phone {
-width: 299.08px;
+  margin-left: 50px;
   height: 600px;
-  /* margin-right: 300px; */
+  /* margin-left: 300px; */
   transform: rotate(90deg);
 }
 

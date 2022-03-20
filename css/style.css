@@ -238,9 +238,13 @@ body {
   .header__apps {
     flex-direction: row;
   }
+  .our-mission__phone {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 992px) {
+
   .blur-2 {
     display: none;
   }
@@ -343,6 +347,7 @@ body {
     height: 100%;
     width: auto;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -417,6 +422,9 @@ body {
     height: 100%;
     width: auto;
   }
+  /* .our-mission__inner {
+    padding-bottom: 350px;
+  } */
 }
 
 @media (max-width: 576px) {
@@ -635,6 +643,9 @@ body {
     font-size: 12px;
   }
   .our-mission__phone {
-   margin-right: 0;
-    }
+    margin-right: 0;
+  }
+  .our-mission__inner {
+    padding-bottom: 0;
+  }
 }
