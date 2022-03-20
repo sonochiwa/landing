@@ -120,11 +120,11 @@ body {
   .id-scanner__primary-text {
     width: 100%;
   }
-  .our-mission__phone {
+  /* .our-mission__phone {
     margin-left: -150px;
     margin-top: -230px;
     width: 300px;
-  }
+  } */
   .our-mission__inner {
     padding-bottom: 100px;
   }
@@ -154,11 +154,11 @@ body {
   .our-mission__inner {
     margin-bottom: -400px;
   }
-  .our-mission__phone {
+  /* .our-mission__phone {
     margin-left: -150px;
     margin-top: -290px;
     width: 200px;
-  }
+  } */
   .qr-code__inner {
     width: 100%;
     align-items: center;
@@ -302,9 +302,9 @@ body {
   }
   .our-mission__phone {
     display: flex;
-    width: 300px;
+    /* width: 300px; */
     justify-content: center;
-    margin: 0 0;
+    /* margin: 0 0; */
     align-items: center;
   }
   .our-mission__inner {

@@ -27,14 +27,15 @@
 }
 
 .our-mission__phone {
-  margin-left: 50px;
+width: 299.08px;
   height: 600px;
+  margin-right: 300px;
   transform: rotate(90deg);
 }
 
 .our-mission__phone img {
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .text-hidden {
