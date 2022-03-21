@@ -73,6 +73,7 @@ button:disabled {
 }
 
 .dot {
+  cursor: pointer;
   width: 15px;
   height: 15px;
   background-color: rgb(202, 202, 202);
