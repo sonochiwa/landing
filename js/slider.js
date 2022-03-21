@@ -58,7 +58,6 @@ document.querySelector('.prev').addEventListener('click', function () {
 function goToDot(obj) {
     value = obj.getAttribute('value');
     if (item) {
-        console.log(item);
     } else {
         item = slides.children[0];
     }
