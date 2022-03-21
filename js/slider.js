@@ -13,6 +13,7 @@ slides.children[scrolls].getAttribute('value');
 dots.children[dotNumber].classList.add('active-dot');
 document.querySelector('.next').addEventListener('click', function () {
     next.disabled = true;
+    prev.disabled = true;
     let intervalPlus = setInterval(function () {
         if (x == -400) {
             clearInterval(intervalPlus);
@@ -21,6 +22,7 @@ document.querySelector('.next').addEventListener('click', function () {
             slides.appendChild(item);
             slides.style.marginLeft = 0;
             next.disabled = false;
+            prev.disabled = false;
             for (let i = 0; i <= dots.children.length - 1; i++) {
                 dots.children[i].classList.remove('active-dot');
             }
@@ -35,6 +37,7 @@ document.querySelector('.next').addEventListener('click', function () {
 
 document.querySelector('.prev').addEventListener('click', function () {
     prev.disabled = true;
+    next.disabled = true;
     item = slides.children[scrolls];
     slides.insertBefore(slides.lastElementChild, item);
     slides.style.marginLeft = -400 + 'px';
@@ -48,6 +51,7 @@ document.querySelector('.prev').addEventListener('click', function () {
             clearInterval(intervalMinus);
             x = 0;
             prev.disabled = false;
+            next.disabled = false;
         } else {
             slides.style.marginLeft = parseInt(slides.style.marginLeft || 0) + 2 + 'px';
             x += 2;
