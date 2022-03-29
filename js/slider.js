@@ -1,73 +1,96 @@
-let next = document.querySelector(".next");
-let prev = document.querySelector(".prev");
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
 let slides = document.querySelector('.slides');
 let dots = document.querySelector('.dots');
-let item;
-let x = 0;
-let scrolls = 0;
-let lastchild = slides.lastElementChild;
+let slide = 0;
+let size = slides.children[0].offsetWidth;
 let count = slides.children.length;
-let dotNumber = 0;
+let first = slides.firstElementChild;
+let cloneFirst = first.cloneNode(true);
+last = slides.lastElementChild;
+cloneLast = last.cloneNode(true);
+slides.insertBefore(cloneFirst, last.nextSubling);
+slides.insertBefore(cloneLast, first);
+slides.style.marginLeft = -size + 'px';
 
-slides.children[scrolls].getAttribute('value');
-dots.children[dotNumber].classList.add('active-dot');
-document.querySelector('.next').addEventListener('click', function () {
-    next.disabled = true;
-    prev.disabled = true;
-    let intervalPlus = setInterval(function () {
-        if (x == -400) {
-            clearInterval(intervalPlus);
-            x = 0;
-            item = slides.children[scrolls];
-            slides.appendChild(item);
-            slides.style.marginLeft = 0;
-            next.disabled = false;
-            prev.disabled = false;
-            for (let i = 0; i <= dots.children.length - 1; i++) {
-                dots.children[i].classList.remove('active-dot');
-            }
-            dotNumber = slides.children[scrolls].getAttribute('value');
-            dots.children[dotNumber].classList.add('active-dot');
-        } else {
-            slides.style.marginLeft = parseInt(slides.style.marginLeft || 0) - 2 + 'px';
-            x -= 2;
-        }
-    }, 1);
-});
-
-document.querySelector('.prev').addEventListener('click', function () {
-    prev.disabled = true;
-    next.disabled = true;
-    item = slides.children[scrolls];
-    slides.insertBefore(slides.lastElementChild, item);
-    slides.style.marginLeft = -400 + 'px';
-    for (let i = 0; i <= dots.children.length - 1; i++) {
-        dots.children[i].classList.remove('active-dot');
+function dot() {
+    for (let element of dots.children) {
+        element.classList.remove('active-dot');
     }
-    dotNumber = slides.children[scrolls].getAttribute('value');
-    dots.children[dotNumber].classList.add('active-dot');
-    let intervalMinus = setInterval(function () {
-        if (x == 400) {
-            clearInterval(intervalMinus);
-            x = 0;
-            prev.disabled = false;
-            next.disabled = false;
-        } else {
-            slides.style.marginLeft = parseInt(slides.style.marginLeft || 0) + 2 + 'px';
-            x += 2;
-        }
-    }, 1);
-});
-
-function goToDot(obj) {
-    value = obj.getAttribute('value');
-    if (item) {
-    } else {
-        item = slides.children[0];
-    }
-    slides.style.marginLeft = (-400 * value) + 'px';
-    for (let i = 0; i <= dots.children.length - 1; i++) {
-        dots.children[i].classList.remove('active-dot');
-    }
-    dots.children[value].classList.add('active-dot');
+    dots.children[slide].classList.add('active-dot');
 }
+
+dot();
+
+function shift(dir, callback = function () { }) {
+    let position = 0;
+    let interval = setInterval(function () {
+        if (position >= size) {
+            clearInterval(interval);
+            callback();
+        } else {
+            slides.style.marginLeft = parseInt(slides.style.marginLeft || 0) - (dir * 2) + 'px';
+            position += 2;
+        }
+    }, 1);
+}
+
+function forward(callback) {
+    if (slide + 1 == count) {
+        shift(1, function () {
+            slides.style.marginLeft = parseInt(slides.style.marginLeft || 0) + (size * count) + 'px';
+        });
+        slide = 0;
+    } else {
+        shift(1);
+        slide++;
+    }
+    dot();
+    setTimeout(callback, 1000);
+}
+
+function backward(callback) {
+    if (slide - 1 < 0) {
+        shift(-1, function () {
+            slides.style.marginLeft = parseInt(slides.style.marginLeft || 0) - (size * count) + 'px';
+        });
+        slide = count - 1;
+    } else {
+        shift(-1);
+        slide--;
+    }
+    dot();
+    setTimeout(callback, 1000);
+}
+
+function target(index) {
+    dots.children[index].onclick = function () {
+        let steps = Math.abs(index - slide);
+        for (let i = 0; i < steps; i++) {
+            if (index > slide) {
+                forward();
+            } else {
+                backward();
+            }
+        }
+    };
+}
+
+for (let i = 0; i < dots.children.length; i++) {
+    target(i);
+}
+
+next.addEventListener('click', function () {
+    next.disabled = true;
+    forward(function () {
+        next.disabled = false;
+    });
+});
+
+prev.addEventListener('click', function () {
+
+    prev.disabled = true;
+    backward(function () {
+        prev.disabled = false;
+    });
+});
